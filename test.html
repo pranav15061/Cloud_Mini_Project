@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Management123</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div>
+<button id="addBtn">Add Application</button>
+
+<select id="filterStatus">
+    <option value="all">All</option>
+    <option value="applied">Applied</option>
+    <option value="interviewed">Interviewed</option>
+    <option value="rejected">Rejected</option>
+</select>
+<select id="sortSelect">
+    <option value="position">Sort by Position</option>
+    <option value="status">Sort by Status</option>
+</select>
+
+</div>
+
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <input type="hidden" id="appId">
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName">
+        <label for="position">Position:</label>
+        <input type="text" id="position">
+        <label for="status">Status:</label>
+        <select id="status">
+            <option value="applied">Applied</option>
+            <option value="interviewed">Interviewed</option>
+            <option value="rejected">Rejected</option>
+        </select>
+        <button id="saveBtn">Save</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
